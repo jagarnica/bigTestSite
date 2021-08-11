@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Notely: A bad note taking app
 </h1>
 
 ## 🚀 Quick start
