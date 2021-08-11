@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "esnext",
+      "jsx": "preserve",
+      "lib": ["dom", "esnext"],
+      "strict": true,
+      "noEmit": true,
+      "types": ["react"],
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "noUnusedLocals": false, // done due to compatibility with babel
+      "baseUrl": "./src", // done to get absolute paths working in vscode.
+    },
+    "exclude": ["node_modules", "public", ".cache"]
+}
