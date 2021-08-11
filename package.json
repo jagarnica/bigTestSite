@@ -29,6 +29,7 @@
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-mdx": "^2.11.0",
     "gatsby-plugin-react-helmet": "^4.11.0",
+    "gatsby-plugin-root-import": "2.0.6",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-styled-components": "^4.11.0",
     "gatsby-source-filesystem": "^3.11.0",
@@ -44,7 +45,16 @@
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
+    "@typescript-eslint/eslint-plugin": "4.29.1",
+    "@typescript-eslint/parser": "4.29.1",
     "babel-loader": "^8.2.2",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.24.0",
+    "gatsby-plugin-eslint": "3.0.0",
     "typescript": "4.3.5"
   }
 }

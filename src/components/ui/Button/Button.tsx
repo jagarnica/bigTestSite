@@ -1,8 +1,6 @@
-import * as React from 'react'
-import {Button as CButton, ButtonProps} from '@chakra-ui/react'
+import * as React from "react";
+import { Button as CButton, ButtonProps } from "@chakra-ui/react";
 
-export function Button({children,...props}:ButtonProps ){
-    return <CButton {...props}>
-        {children}
-    </CButton>
+export function Button({ children, ...props }: ButtonProps) {
+  return <CButton {...props}>{children}</CButton>;
 }
