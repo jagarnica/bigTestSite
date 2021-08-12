@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Box, Text, Link } from "@chakra-ui/react";
+import { Box, BoxProps, Link } from "@chakra-ui/react";
 import { Link as GLink } from "gatsby";
 
-export function NavBar() {
+export function NavBar(props: BoxProps) {
   return (
     <Box
       d="flex"
@@ -12,6 +12,7 @@ export function NavBar() {
       borderBottomColor="gray.300"
       justifyContent="space-between"
       alignItems="center"
+      {...props}
     >
       <Link
         as={GLink}

@@ -7,8 +7,14 @@ export type LayoutProps = {
 export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <NavBar />
-      <Box d="flex" justifyContent="center">
+      <NavBar pos="absolute" top="0" left="0" bg="white" />
+      <Box
+        d="flex"
+        justifyContent="center"
+        pt="24"
+        bgColor="gray.50"
+        minH="100vh"
+      >
         <Box maxW="768px" flex="1" mt="2rem" as="main">
           {children}
         </Box>
