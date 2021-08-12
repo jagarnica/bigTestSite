@@ -9,7 +9,7 @@ export function Layout({ children }: LayoutProps) {
     <>
       <NavBar />
       <Box d="flex" justifyContent="center">
-        <Box maxW="768px" mt="2rem" as="main">
+        <Box maxW="768px" flex="1" mt="2rem" as="main">
           {children}
         </Box>
       </Box>
