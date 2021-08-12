@@ -15,7 +15,8 @@
     "clean": "gatsby clean",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=73221933a011"
+    "chromatic": "npx chromatic --project-token=73221933a011",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "2.0.1",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
+    "@percy/storybook": "3.3.1",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
