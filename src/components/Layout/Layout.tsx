@@ -7,7 +7,7 @@ export type LayoutProps = {
 export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <NavBar pos="absolute" top="0" left="0" bg="white" />
+      <NavBar pos="absolute" top="0" left="0" bg="white" w="100vw" />
       <Box
         d="flex"
         justifyContent="center"
