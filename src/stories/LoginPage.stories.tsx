@@ -1,10 +1,10 @@
-import * as React from "react";
+import { withLayout } from "./utils";
 import LoginPageComponent from "../pages/login";
 
 export default {
-  title: "Login Page",
+  title: "Layout/Login Page",
   component: LoginPageComponent,
 };
-const Template = () => <LoginPageComponent />;
+const Template = () => withLayout(LoginPageComponent);
 
 export const LoginPage = Template.bind({});
