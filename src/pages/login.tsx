@@ -26,11 +26,11 @@ export default function LoginPage() {
         Login in to Notely
       </Text>
       <FormControl d="grid" gridGap="8px">
-        <FormLabel>Username</FormLabel>
-        <Input placeholder="Username"></Input>
+        <FormLabel htmlFor="username">Username</FormLabel>
+        <Input id="username" placeholder="Username"></Input>
         <FormHelperText>Please enter your username</FormHelperText>
-        <FormLabel>Password</FormLabel>
-        <Input placeholder="Password" type="password"></Input>
+        <FormLabel htmlFor="password">Password</FormLabel>
+        <Input id="password" placeholder="Password" type="password"></Input>
         <FormHelperText>Please enter your password</FormHelperText>
         <Button type="submit">Login</Button>
         <Link as={GatsbyLink} to="/signup">
