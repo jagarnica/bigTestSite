@@ -26,18 +26,20 @@ export default function SignUpPage() {
       <Text mb="2" alignSelf="center" fontSize="4xl" fontWeight="light">
         Sign up for Notely
       </Text>
-      <FormControl d="grid" gridGap="8px">
-        <FormLabel htmlFor="username">Username</FormLabel>
-        <Input id="username" placeholder="Username"></Input>
-        <FormHelperText>Please enter your username</FormHelperText>
-        <FormLabel htmlFor="password">Password</FormLabel>
-        <Input id="password" placeholder="Password" type="password"></Input>
-        <FormHelperText>Please enter your password</FormHelperText>
-        <Button type="submit">Sign Up</Button>
-        <Link as={GatsbyLink} to="/login">
-          Already have an account? Log in
-        </Link>
-      </FormControl>
+      <form>
+        <FormControl d="grid" gridGap="8px">
+          <FormLabel htmlFor="username">Username</FormLabel>
+          <Input id="username" placeholder="Username"></Input>
+          <FormHelperText>Please enter your username</FormHelperText>
+          <FormLabel htmlFor="password">Password</FormLabel>
+          <Input id="password" placeholder="Password" type="password"></Input>
+          <FormHelperText>Please enter your password</FormHelperText>
+          <Button type="submit">Sign Up</Button>
+          <Link as={GatsbyLink} to="/login">
+            Already have an account? Log in
+          </Link>
+        </FormControl>
+      </form>
     </Box>
   );
 }
