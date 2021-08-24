@@ -22,7 +22,7 @@ export default function LoginPage() {
       flexDir="column"
       bg="white"
     >
-      <Text mb="2" alignSelf="center" fontSize="4xl" fontWeight="light">
+      <Text mb="2" alignSelf="center" fontSize="5xl" fontWeight="light">
         Login in to Notely
       </Text>
       <FormControl d="grid" gridGap="8px">
