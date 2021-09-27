@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Input, Textarea, SimpleGrid, BoxProps } from "@chakra-ui/react";
+import { Input, Textarea, Text, SimpleGrid, BoxProps } from "@chakra-ui/react";
 import { Button } from "components/ui/Button";
 import { Card } from "components/ui/Card";
 export type UserNote = {
@@ -24,22 +24,14 @@ export const Note = ({
   }
   if (readOnly && initialValue) {
     return (
-      <Box
-        borderWidth="1px"
-        borderColor="blue.800"
-        boxShadow="md"
-        borderRadius="md"
-        bg="white"
-        p="4"
-        {...rest}
-      >
+      <Card bg="white" p="4" {...rest}>
         <SimpleGrid color="blue.800" column={1} spacing={2}>
           <Text fontSize="2xl" fontWeight="bold">
             {initialValue.title}
           </Text>
           <Text>{initialValue.description}</Text>
         </SimpleGrid>
-      </Box>
+      </Card>
     );
   }
   return (

@@ -5,14 +5,14 @@ import { Note, UserNote } from "components/ui/Note";
 const SampleNote: UserNote = {
   title: "Go Shopping for New Dutch Oven",
   description:
-    "Go to Williams Sonoma or something to buy a dutch oven. Maybe a Teal one?",
+    "Go to Williams Sonoma or something to buy a dutch oven. Maybe a teal one?",
 };
 const IndexPage = (): JSX.Element => {
   const savedNotes = [SampleNote];
   return (
     <>
       <Text fontSize="3xl" color="blue.800" as="p">
-        Welcome to Notely. The world's worst note taking app.
+        {`Welcome to Notely. The world's worst note taking app.`}
       </Text>
       <Text mt="8" fontSize="2xl" color="blue.800" as="p">
         My previous notes:
