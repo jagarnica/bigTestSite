@@ -10,18 +10,11 @@ import {
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import { Button } from "components/ui/Button";
-export default function LoginPage() {
+import { Card } from "components/ui/Card";
+
+export default function LoginPage(): JSX.Element {
   return (
-    <Box
-      w="100%"
-      border="1px"
-      borderColor="gray.200"
-      p="2rem 1.5rem"
-      borderRadius="3xl"
-      d="flex"
-      flexDir="column"
-      bg="white"
-    >
+    <Card p="2rem 1.5rem" d="flex" flexDir="column">
       <Text mb="2" alignSelf="center" fontSize="4xl" fontWeight="light">
         Login in to Notely
       </Text>
@@ -37,6 +30,6 @@ export default function LoginPage() {
           Sign up for an account
         </Link>
       </FormControl>
-    </Box>
+    </Card>
   );
 }
