@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Card } from "components/ui/Card";
 import {
   Input,
   FormLabel,
@@ -13,16 +14,7 @@ import { Button } from "components/ui/Button";
 
 export default function SignUpPage() {
   return (
-    <Box
-      w="100%"
-      border="1px"
-      borderColor="gray.200"
-      p="2rem 1.5rem"
-      borderRadius="3xl"
-      d="flex"
-      flexDir="column"
-      bg="white"
-    >
+    <Card p="2rem 1.5rem" d="flex" flexDir="column">
       <Text mb="2" alignSelf="center" fontSize="4xl" fontWeight="light">
         Sign up for Notely
       </Text>
@@ -38,6 +30,6 @@ export default function SignUpPage() {
           Already have an account? Log in
         </Link>
       </FormControl>
-    </Box>
+    </Card>
   );
 }

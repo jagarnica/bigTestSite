@@ -6,8 +6,9 @@ export function Card({ children, ...rest }: BoxProps): JSX.Element {
   return (
     <Box
       border="1px"
-      borderColor="gray.200"
-      borderRadius="3xl"
+      borderColor="blue.800"
+      borderRadius="md"
+      boxShadow="md"
       bg="white"
       {...rest}
     >
