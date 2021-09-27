@@ -1,17 +1,12 @@
 import * as React from "react";
-import {
-  Box,
-  Text,
-  Input,
-  Textarea,
-  SimpleGrid,
-  BoxProps,
-} from "@chakra-ui/react";
+import { Input, Textarea, SimpleGrid, BoxProps } from "@chakra-ui/react";
 import { Button } from "components/ui/Button";
+import { Card } from "components/ui/Card";
 export type UserNote = {
   title?: string;
   description: string;
 };
+
 export interface NoteProps extends BoxProps {
   onSubmit?: () => void;
   readOnly?: boolean;
@@ -48,15 +43,7 @@ export const Note = ({
     );
   }
   return (
-    <Box
-      borderWidth="1px"
-      borderColor="blue.800"
-      boxShadow="md"
-      borderRadius="md"
-      bg="white"
-      p="4"
-      {...rest}
-    >
+    <Card p="4" {...rest}>
       <form onSubmit={handleSubmit}>
         <SimpleGrid column={1} spacing={6} color="blue.800">
           <Text fontWeight="bold" fontSize="2xl">
@@ -69,6 +56,6 @@ export const Note = ({
           </Button>
         </SimpleGrid>
       </form>
-    </Box>
+    </Card>
   );
 };
